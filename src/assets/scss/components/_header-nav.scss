@@ -1,0 +1,128 @@
+.c-header__nav {
+  color: $white;
+
+  &--mobile {
+    display: flex;
+    justify-content: flex-end;
+    font-size: rem-calc(20);
+    .menu-primary-menu-container {
+      ul {
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+  }
+
+  &--desktop {
+    height: 70px;
+    display: none;
+
+    .menu-primary-menu-container {
+      width: 100%;
+
+      ul {
+        padding: 0;
+        margin: 0;
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          list-style: none;
+          a {
+            color: $white;
+            @include font-body;
+            text-transform: capitalize;
+            font-size: 1.1rem;
+
+            &:hover {
+              color: $brand;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 960px) {
+    .c-header__nav {
+      &--mobile {
+        display: none;
+      }
+
+      &--desktop {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
+  }
+}
+
+// Overlay for mobile menu
+.openbtn {
+  font-size: rem-calc(24);
+  padding-top: 1rem;
+  cursor: pointer;
+  color: $white;
+  position: relative;
+
+  &:hover {
+    color: $brand;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.98);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: rem-calc(26);
+  color: $black;
+  display: block;
+  transition: 0.3s;
+  text-transform: capitalize;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: $brand;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  font-size: rem-calc(30);
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: rem-calc(20);
+  }
+  .overlay .closebtn {
+    font-size: rem-calc(20);
+    top: 15px;
+    right: 35px;
+  }
+}

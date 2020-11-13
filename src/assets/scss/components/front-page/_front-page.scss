@@ -1,0 +1,18 @@
+.home-intro {
+  padding: 75px 0;
+  align-items: center;
+  @include font-bold;
+  &__text {
+    p {
+      font-size: 1.125rem;
+      padding-right: 20px;
+      hyphens: none;
+    }
+    h1 {
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}

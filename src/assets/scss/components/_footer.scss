@@ -1,0 +1,102 @@
+.c-footer {
+    background: #000;
+    color: $grey;
+    &--top {
+      border-bottom: 1px solid $brand;
+      padding: 25px 0;
+      background: #000;
+    }
+
+    
+
+    h5 {
+      margin-bottom: 1rem;
+      color: $brand;
+    }
+
+    a {
+      color: $grey;
+      &:hover {
+        color: $brand;
+      }
+    }
+}
+
+.menu-footer-shop-menu-container,
+.menu-blog-posts-menu-container,
+.menu-primary-menu-container {
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+}
+
+.c-site-info {
+  width: 100%;
+  background-color: #000;
+  padding: rem-calc(15) 0;
+  color: $grey;
+  font-size: rem-calc(15);
+  &--light {
+    background-color: $grey;
+    color: $black;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .c-footer {
+    &__top {
+  
+      h5 {
+        margin: 2rem 0 1rem;
+      }
+    }
+
+    &__widget {
+      border-bottom: 1px solid rgba(242, 242, 242, 0.5);
+      padding-bottom: 30px;
+      &:last-of-type {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .c-site-info {
+    text-align: center;
+    &__text {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+
+.c-footer {
+  &__contact {
+    color: $grey;
+    padding: 50px 1.25rem;
+    background: $black;
+    input, textarea {
+      margin-top: 15px;
+      background: $black;
+      outline: none;
+      color: $grey;
+      border-radius: 5px;
+      border: 1px solid $dark-grey !important;
+    }
+
+    .c-cf7form__inputs {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 25px;
+      .c-cf7form__input {
+        width: 32%;
+      }
+      .wpcf7-form-control .wpcf7-submit {
+        &hover {
+          color: $white !important;
+        }
+      }
+    }
+  }
+}
