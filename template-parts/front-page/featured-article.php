@@ -6,7 +6,7 @@
     <div class="o-row">
       <div class="o-row__column o-row__column--span-12">
         
-        <div>
+        <div class="featured-article__card">
           <?php $my_query = new WP_Query('showposts=1'); ?>
           <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
             <div class="featured-article__header">
