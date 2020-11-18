@@ -69,14 +69,6 @@ $fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
   opacity: 0;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
-  transition: background-color 5000s;
-  -webkit-text-fill-color: $grey !important;
-}
-
 .c-front-page__articles {
   padding: 50px 0;
 }
