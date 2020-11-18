@@ -74,7 +74,7 @@ export const pot = () => {
 export const serve = (done) => {
   server.init({
     // Change this url for browsersync and also in General Settings in WP Admin
-    proxy: 'http://192.168.1.19/my-blog'
+    proxy: 'http://192.168.1.19/pauls-blog'
   })
   done()
 }

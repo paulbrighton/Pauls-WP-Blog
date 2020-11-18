@@ -1,10 +1,9 @@
 .c-footer {
-    background: #000;
+    background: $brand-grey;
     color: $grey;
     &--top {
-      border-bottom: 1px solid $brand;
-      padding: 25px 0;
-      background: #000;
+      padding: 50px 0;
+      background: $brand-grey;
     }
 
     
@@ -12,6 +11,9 @@
     h5 {
       margin-bottom: 1rem;
       color: $brand;
+      @media (max-width: 767px) {
+        margin-top: 1.5rem;
+      }
     }
 
     a {
@@ -43,12 +45,12 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .c-footer {
     &__top {
   
       h5 {
-        margin: 2rem 0 1rem;
+        margin: 12rem 0 1rem;
       }
     }
 
@@ -73,7 +75,7 @@
 .c-footer {
   &__contact {
     color: $grey;
-    padding: 50px 1.25rem;
+    padding: 50px 0;
     background: $black;
     input, textarea {
       margin-top: 15px;
@@ -89,8 +91,15 @@
       justify-content: space-between;
       width: 100%;
       margin-bottom: 25px;
+      @media (max-width: 767px) {
+        display: block;
+      }
       .c-cf7form__input {
         width: 32%;
+        @media (max-width: 767px) {
+          width: 100%;
+          margin-top: 20px;
+        }
       }
       .wpcf7-form-control .wpcf7-submit {
         &hover {

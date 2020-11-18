@@ -10,10 +10,10 @@ p {
     -moz-osx-font-smoothing: grayscale;
     word-break: break-all;
     word-break: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto; 
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual; 
 }
 
 a {   
@@ -24,7 +24,7 @@ a {
     word-break: break-all;
     word-break: break-word;
     &:hover {   
-        color: $brand-darker;
+        color: $grey;
     }
 }
 

@@ -3,7 +3,7 @@
 <div class="c-footer__contact">
   <div class="o-container">
   <h3>Contact Me</h3>
-  <p>If you have a project that you would like to discuss, please use the form below to get in touch.</p>
+  <p>If you have a project that you would like to discuss or have any positions that would suit me, please use the form below to get in touch.</p>
   <?php echo do_shortcode('[contact-form-7 id="46" title="Contact form 1"]'); ?>
   </div>
 </div>

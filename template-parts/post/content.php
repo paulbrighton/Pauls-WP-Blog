@@ -1,12 +1,12 @@
 <article <?php post_class( 'c-post u-margin-bottom-20' ) ?>>
   <div class="c-post__inner">
+  <?php get_template_part('template-parts/post/header', '_themename') ?>
+  
     <?php if(get_the_post_thumbnail() !== '') { ?>
       <div class="c-post__thumbnnail">
         <?php the_post_thumbnail('large') ?>
       </div>
     <?php } ?>
-
-    <?php get_template_part('template-parts/post/header', '_themename') ?>
 
     <?php if(is_single()) { ?>
       <div class="c-post__content">

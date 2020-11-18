@@ -36,3 +36,21 @@ return $title;
 // add_filter('acf/settings/remove_wp_meta_box', '__return_false');
 
 add_filter('acf/settings/remove_wp_meta_box', '__return_false');
+
+function add_file_types_to_uploads($file_types){
+  $new_filetypes = array();
+  $new_filetypes['svg'] = 'image/svg';
+  $file_types = array_merge($file_types, $new_filetypes );
+  return $file_types;
+  }
+  add_filter('upload_mimes', 'add_file_types_to_uploads');
+
+function new_excerpt_more( $more ) {
+  return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function custom_excerpt_length( $length ) {
+	return 35;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
