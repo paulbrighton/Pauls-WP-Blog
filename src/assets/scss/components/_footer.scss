@@ -35,7 +35,7 @@
 
 .c-site-info {
   width: 100%;
-  background-color:$black;
+  background: $black;
   padding: rem-calc(15) 0;
   color: $grey;
   font-size: rem-calc(15);
@@ -47,8 +47,8 @@
 
 @media only screen and (max-width: 767px) {
   .c-footer {
+    text-align: center;
     &__top {
-  
       h5 {
         margin: 12rem 0 1rem;
       }

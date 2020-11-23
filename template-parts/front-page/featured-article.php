@@ -16,13 +16,15 @@
             </div>
 
             <div class="img">
-              <?php the_post_thumbnail('full'); ?>
+              <a href="<?php the_permalink(); ?>">
+                <?php the_post_thumbnail('full'); ?>
+              </a>
             </div>
             <div class="featured-article__footer">
               <div class="featured-article__excerpt">
                 <?php the_excerpt(); ?>
               </div>
-              <a href="<?php the_permalink(); ?>" class="featured-article__read-more">Read more...</a>
+              <a href="<?php the_permalink(); ?>" class="c-articles__card-link"><?php the_field('article_link_text') ?></a>
             </div>
             <?php wp_reset_query(); ?>
           <?php endwhile; ?>

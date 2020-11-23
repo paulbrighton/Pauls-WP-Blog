@@ -1,22 +1,27 @@
 .featured-article {
-  background: $dark-blue;
+  background: $dark-blue-portfolio;
   color: $grey;
   padding: 50px 0 70px;
+  &__card {
+    border: 1px solid $dark-grey;
+    border-radius: 10px;
+    overflow: hidden;
+  }
   h2 {
     margin-bottom: 50px;
     text-align: center;
   }
   &__container {
-    max-width: 768px;
-    padding: 0;
+    max-width: 960px;
+    padding: 0 0.625rem;
     margin: 0 auto;
-    @media (max-width: 767px) {
+    @media (max-width: 959px) {
       padding: 0;
       margin: 0 0.625rem;
     }
   }
   &__header, &__footer {
-    background: $black;
+    background: $test;
     padding: 20px;
     h3 {
       margin: 0;
@@ -39,6 +44,12 @@
     align-items: center;
   }
   &__excerpt {
-    // width: 90%;
+    margin-bottom: 20px;
+    padding: 0 25px;
+    text-align: center;
+    @media (max-width: 767px) {
+      padding: 0;
+      text-align: left;
+    }
   }
 }

@@ -33,11 +33,12 @@
     align-content: center;
     width: 100%;
     h1 {
-      color: #EDE7F6;
+      color: $white;
       text-transform: uppercase;
       text-align: center;
       margin: 0;
       padding: 0;
+      text-shadow: 1px 1px 1px $black;
     }
   }
 }

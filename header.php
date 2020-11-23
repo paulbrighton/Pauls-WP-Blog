@@ -18,7 +18,7 @@
           <?php endif; ?>
           <div class="c-header__overlay">
             <div class="o-row c-header__info">
-              <div class="o-row__column o-row__column--span-8 o-row__column--span-9@xlarge">
+              <div class="o-row__column o-row__column--span-8 o-row__column--span-7@medium o-row__column--span-8@xlarge">
                 <div class="c-header__logo">
                   <?php if (has_custom_logo()) {
                     the_custom_logo();
@@ -27,7 +27,7 @@
                   <?php } ?>
                 </div>
               </div>
-              <div class="o-row__column o-row__column--span-4 o-row__column--span-3@xlarge">
+              <div class="o-row__column o-row__column--span-4 o-row__column--span-5@medium o-row__column--span-4@xlarge">
                 <div class="c-header__nav">
                   <div class="c-header__nav--mobile">
                     <a class="openbtn"><i class="fas fa-bars"></i></a>

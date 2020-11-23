@@ -40,6 +40,23 @@
   }
 }
 
+#custom_html-3 {
+  padding-bottom: 20px;
+  @media (max-width: 767px) {
+    padding-bottom: 0;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+}
+
+#custom_html-3 {
+  @media (max-width: 767px) {
+    margin-bottom: 24px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .c-sidebar-widget {
     margin-top: 0;

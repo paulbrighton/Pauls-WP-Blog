@@ -20,6 +20,9 @@
 
     .menu-primary-menu-container {
       width: 100%;
+      .current-menu-item a {
+        color: $brand;
+      }
 
       ul {
         padding: 0;
@@ -61,6 +64,13 @@
   }
 }
 
+@media (max-width: 959px) {
+  #menu-item-316 {
+    display: none;
+  }
+}
+
+
 // Overlay for mobile menu
 .openbtn {
   font-size: rem-calc(24);
@@ -81,14 +91,14 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color: rgba(1, 6, 38, 0.9);
   overflow-x: hidden;
   transition: 0.5s;
 }
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 35%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -98,7 +108,7 @@
   padding: 8px;
   text-decoration: none;
   font-size: rem-calc(26);
-  color: $black;
+  color: $white;
   display: block;
   transition: 0.3s;
   text-transform: capitalize;

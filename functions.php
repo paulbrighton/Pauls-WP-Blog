@@ -54,3 +54,5 @@ function custom_excerpt_length( $length ) {
 	return 25;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+add_image_size( 'post-thumbnail size', 960, 540 );

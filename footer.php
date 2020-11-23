@@ -1,9 +1,9 @@
 </main>
 
-<div class="c-footer__contact">
+<div class="c-footer__contact"id="contact-form">
   <div class="o-container">
-  <h3><?php the_field('contact_title'); ?></h3>
-  <p><?php the_field('contact_description'); ?></p>
+  <h3><?php the_field('contact_title', 40); ?></h3>
+  <p><?php the_field('contact_description', 40); ?></p>
   <?php echo do_shortcode('[contact-form-7 id="46" title="Contact form 1"]'); ?>
   </div>
 </div>

@@ -4,7 +4,7 @@
     <div class="home-intro__text o-row__column o-row__column--span-12 o-row__column--span-6@medium u-flex u-flex-direction-column">
       <h1><?php the_field('home_intro_title') ?></h1>
       <h2><?php the_field('home_intro_sub_title') ?></h2>
-      <p><?php the_field('home_intro_text') ?></p>
+      <?php echo wpautop( get_field("home_intro_text")) ?>
     </div>
     <div class="o-row__column o-row__column--span-12 o-row__column--span-6@medium">
       <div class="home-intro__image">

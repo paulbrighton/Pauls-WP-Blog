@@ -35,9 +35,7 @@
                 <div class="c-articles__card-excerpt">
                   <?php the_excerpt(); ?>
                 </div>
-                <div class="c-articles__card-link">
-                  <a href="<?php the_permalink(); ?>" class="c-front-page__article">Read more...</a>
-                </div>
+                <a href="<?php the_permalink(); ?>" class="c-articles__card-link"><?php the_field('article_link_text') ?></a>
               </div>
             </div>
 
