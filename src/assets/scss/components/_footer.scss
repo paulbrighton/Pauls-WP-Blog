@@ -1,9 +1,9 @@
 .c-footer {
-    background: $dark-blue;
+    background: $test;
     color: $grey;
     &--top {
       padding: 50px 0;
-      background: $dark-blue;
+      background: $test;
     }
 
     
@@ -76,7 +76,7 @@
   &__contact {
     color: $grey;
     padding: 50px 0;
-    background: $black;
+    background: #000;
     input, textarea {
       margin-top: 15px;
       background: $black;

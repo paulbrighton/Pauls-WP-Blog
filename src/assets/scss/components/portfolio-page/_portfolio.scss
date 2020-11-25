@@ -1,6 +1,6 @@
 .c-portfolio {
-  background: $dark-blue-portfolio;
-  padding: 50px 0 35px;
+  background: $dark-blue-portfolio-d;
+  padding: 50px 0 30px;
   &__header {
     margin-bottom: 60px;
     @media (max-width: 959px) {
@@ -15,31 +15,31 @@
   &__card {
     background: $test;
     color: $grey;
-    border: 1px solid $dark-grey;
+    border: 1px solid lighten($dark-grey, 5%);
     border-radius: 5px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     @media (max-width: 959px) {
       max-width: 960px;
     }
     &-content {
-      // padding: 15px 0;
       display: flex;
       flex-direction: column;
       flex: 1 1 auto;
     }
     &-img {
-      // padding: 0 15px;
+      padding: 0 15px 15px;
       img {
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
         overflow: hidden;
+        margin-top: 15px;
       }
     }
     &-text {
-      padding: 2.5rem 15px 35px 15px;
+      padding: 1.25rem 15px 35px 15px;
       display: flex;
       flex-direction: column;
       flex: 1 1 auto;

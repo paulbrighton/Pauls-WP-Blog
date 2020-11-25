@@ -1,9 +1,16 @@
 $brand: #BE79A7;
+// $brand: lighten(#7642b7, 20%);
+
 // $dark-blue: #151727;
 $dark-blue: #010626;
-$dark-blue-portfolio: #121212;
+// $dark-blue-portfolio: #121212;
+$dark-blue-portfolio: lighten(#0C0D17, 5%);
+$dark-blue-portfolio-d: #15171c;
+
+// $dark-blue-portfolio: #0A0B15;
+
 $dark-blue-lighter: lighten($dark-blue, 3%);
-$brand-darker: darken($brand, 15%);
+$brand-darker: darken($brand, 25%);
 $brand-lighter: lighten($brand, 5%);
 
 $brand-cream: #ffebcd;
@@ -26,5 +33,5 @@ $dark-grey-lighter: lighten($dark-grey, 15%);
 // $black:#181818;
 $black: #100c08;
 
-// $test: #1E1E1F;
-$test: #1f1b24;
+// $test: #1f1b24;
+$test: #20232a;

@@ -38,7 +38,6 @@
             color: $white;
             @include font-body;
             text-transform: capitalize;
-            // font-size: 1.1rem;
 
             &:hover {
               color: $brand;
@@ -91,9 +90,9 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(1, 6, 38, 0.9);
+  background-color:rgba(21, 23, 28, 0.9);
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
 .overlay-content {
@@ -110,8 +109,9 @@
   font-size: rem-calc(26);
   color: $white;
   display: block;
-  transition: 0.3s;
+  transition: 0.5s ease;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 .overlay a:hover,

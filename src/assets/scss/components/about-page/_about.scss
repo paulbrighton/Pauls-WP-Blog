@@ -1,6 +1,6 @@
 .c-about {
   &__container {
-    background: $dark-blue;
+    background: $dark-blue-portfolio-d;
     background: linear-gradient(90deg, rgba(21,23,39,1) 50%, rgba(9,9,121,1) 50%, rgba(255,255,255,1) 50%);
   }
 
@@ -28,13 +28,13 @@
     }
   }
   &--left {
-    background: $dark-blue;
+    background: $dark-blue-portfolio-d;
     position: relative;
     @include font-body;
     color: #a7a9be;
     padding: 50px 0 50px 0.625rem;
     @media (max-width: 767px) {
-      padding: 50px 0.625rem 50px;
+      padding: 50px 0.625rem 20px;
       width: 100%;
       margin-right: 0;
       margin-left: 0;
@@ -60,7 +60,7 @@
     }
     &:before {
       left: -999em;
-      background:$dark-blue;
+      background: $dark-blue-portfolio-d;
       content: '';
       display: block;
       position: absolute;

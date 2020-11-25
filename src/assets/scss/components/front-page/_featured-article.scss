@@ -1,9 +1,10 @@
 .featured-article {
-  background: $dark-blue-portfolio;
+  background: $dark-blue-portfolio-d;
+  background: #0C0D17;
   color: $grey;
   padding: 50px 0 70px;
   &__card {
-    border: 1px solid $dark-grey;
+    border: 1px solid lighten($dark-grey, 5%);
     border-radius: 10px;
     overflow: hidden;
   }
