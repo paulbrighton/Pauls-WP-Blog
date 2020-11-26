@@ -11,6 +11,9 @@
         <div class="c-about-intro c-about__section">
           <h1><?php the_field('about_title'); ?></h1>
           <?php echo wpautop(get_field("about_intro")) ?>
+          <?php if( get_field('about_intro_cv_link') ): ?>
+            <a href="<?php the_field('about_intro_cv_link'); ?>" ><?php the_field('about_intro_cv_text') ?></a>
+          <?php endif; ?>
         </div>
         <div class="c-about__other c-about__section">
           <h2><?php the_field('other_courses_title') ?></h2>

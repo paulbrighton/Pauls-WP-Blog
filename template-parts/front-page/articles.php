@@ -10,8 +10,8 @@
         <?php
         $args = array(
           'post_type'         => 'post',
-          'posts_per_page'    => 10,
-          'offset'            => 1
+          'posts_per_page'    => 9,
+          // 'offset'            => 1
 
         );
         $the_query2 = new WP_Query($args);
@@ -20,7 +20,7 @@
         if ($the_query2->have_posts()) :
           while ($the_query2->have_posts()) : $the_query2->the_post();
         ?>
-            <div class="c-articles__card o-row__column o-row__column--span-12 o-row__column--span-6@medium">
+            <div class="c-articles__card o-row__column o-row__column--span-12 o-row__column--span-6@medium o-row__column--span-4@xlarge">
               <div class="c-articles__card-header">
                 <a href="<?php the_permalink(); ?>">
                   <h3><?php the_title(); ?></h3>
@@ -28,7 +28,7 @@
               </div>
               <div class="c-articles__card-image">
                 <a href="<?php the_permalink(); ?>">
-                  <?php the_post_thumbnail('full'); ?>
+                  <?php the_post_thumbnail('large'); ?>
                 </a>
               </div>
               <div class="c-articles__card-footer">

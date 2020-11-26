@@ -28,13 +28,6 @@ $title = post_type_archive_title( '', false );
 return $title;
 }
 
-// add_filter('widget_posts_args', 'widget_posts_args_add_custom_type'); 
-// function widget_posts_args_add_custom_type($params) {
-//    $params['post_type'] = array('post','portfolio');
-//    return $params;
-// }
-// add_filter('acf/settings/remove_wp_meta_box', '__return_false');
-
 add_filter('acf/settings/remove_wp_meta_box', '__return_false');
 
 function add_file_types_to_uploads($file_types){
@@ -56,3 +49,24 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 add_image_size( 'post-thumbnail size', 960, 540 );
+
+add_action('wp_head', 'fouc_protect_against');
+/**
+ * Combat FOUC in WordPress
+ * @link https://stackoverflow.com/questions/3221561/eliminate-flash-of-unstyled-content
+ */
+function fouc_protect_against () {
+    ?>
+        <style type="text/css">
+            .hidden {display:none;}
+        </style>
+        <script type="text/javascript">
+         jQuery('html').addClass('hidden');
+	            
+	 jQuery(document).ready(function($) {		            
+	    $('html').removeClass('hidden');	            
+	 });  
+        </script>
+    <?php
+
+}

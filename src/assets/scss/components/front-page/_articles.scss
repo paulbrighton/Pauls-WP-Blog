@@ -1,5 +1,6 @@
 .c-articles {
   padding: 50px 0 30px;
+  background: $dark-blue;
   @media (max-width: 959px) {
     padding: 50px 0 35px;
   }
@@ -13,6 +14,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    border: 1px solid lighten($dark-grey, 5%);
     border-radius: 10px;
     overflow: hidden;
     @media (max-width: 959px) {
@@ -21,7 +23,7 @@
     }
   }
   &__card-header {
-    background: $test;
+    background: $card-grey;
     padding: 15px;
     border-bottom: 1px solid $dark-grey;
     h3 {
@@ -33,7 +35,7 @@
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    background: $test;
+    background: $card-grey;
     color: $brand;
     padding: 15px;
     border-top: 1px solid $dark-grey;
@@ -44,6 +46,8 @@
     margin-bottom: 20px;
     p {
       margin-bottom: 10px;
+      white-space: normal;
+      hyphens: auto;
     }
   }
   &__card-link {

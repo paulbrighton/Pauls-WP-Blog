@@ -20,9 +20,9 @@
       </div>
     <?php } ?>
 
-    <?php if(is_single()) { ?>
+    <!-- <?php if(is_single()) { ?>
       <?php get_template_part('template-parts/post/footer', '_themename') ?>
-    <?php } ?>
+    <?php } ?> -->
    
     <?php if(!is_single()) { ?>
       <?php _themename_readmore_link() ?>

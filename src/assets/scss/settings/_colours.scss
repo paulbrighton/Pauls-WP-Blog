@@ -1,28 +1,17 @@
 $brand: #BE79A7;
-// $brand: lighten(#7642b7, 20%);
-
-// $dark-blue: #151727;
-$dark-blue: #010626;
-// $dark-blue-portfolio: #121212;
-$dark-blue-portfolio: lighten(#0C0D17, 5%);
-$dark-blue-portfolio-d: #15171c;
-
-// $dark-blue-portfolio: #0A0B15;
-
-$dark-blue-lighter: lighten($dark-blue, 3%);
+$card-grey: #20232a;
+$dark-blue: #15171c;
 $brand-darker: darken($brand, 25%);
 $brand-lighter: lighten($brand, 5%);
 
-$brand-cream: #ffebcd;
-
-$primary-colour: #F04E44;
-$primary-colour-dim: darken(#F04E44, 25%);
+$primary-colour:  #0275d8;
+$primary-colour-dim: darken( $primary-colour, 25%);
 
 $secondary-colour: #6c757d;
-$danger-colour: #f03;
-$warning-colour: #ffc107;
-$success-colour: #28a745;
-$info-colour: #17a2b8;
+$danger-colour: #d9534f;
+$warning-colour: #f0ad4e;
+$success-colour: #5cb85c;
+$info-colour: #5bc0de;
 
 $white: #fffffe;
 $light-grey: #f2f2f2;
@@ -30,8 +19,4 @@ $grey: #a7a9be;
 $medium-grey: #383838;
 $dark-grey: #252525;
 $dark-grey-lighter: lighten($dark-grey, 15%);
-// $black:#181818;
-$black: #100c08;
-
-// $test: #1f1b24;
-$test: #20232a;
+$black: #000000;

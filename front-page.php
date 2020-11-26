@@ -10,7 +10,7 @@
       <div class="home-intro__image">
         <?php
         $image = get_field('home_intro_image');
-        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+        $size = 'full';
         if ($image) {
           echo wp_get_attachment_image($image, $size);
         }
@@ -19,8 +19,6 @@
     </div>
   </div>
 </div>
-
-<?php get_template_part('template-parts/front-page/featured-article'); ?>
 
 <?php get_template_part('template-parts/front-page/articles'); ?>
 

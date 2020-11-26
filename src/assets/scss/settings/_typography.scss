@@ -75,15 +75,6 @@ $header-styles: (
   ),
 ) !default;
 
-/* lato-300 - latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'),
-       url('../fonts/lato-v17-latin-300.woff2') format('woff2'),
-       url('../fonts/lato-v17-latin-300.woff') format('woff');
-}
 /* lato-regular - latin */
 @font-face {
   font-family: 'Lato';
@@ -98,14 +89,9 @@ $header-styles: (
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 500;
-  src: local(''),
+  src: local('Raleway'), local('Raleway-Semi-Bold'),
        url('../fonts/raleway-v18-latin-500.woff2') format('woff2'),
        url('../fonts/raleway-v18-latin-500.woff') format('woff');
-}
-
-@mixin font-light() {
-  font-family: "Lato Light", sans-serif;
-  font-weight: 300 !important;
 }
 
 @mixin font-body() {

@@ -1,6 +1,5 @@
 .featured-article {
-  background: $dark-blue-portfolio-d;
-  background: #0C0D17;
+  background: $dark-blue;
   color: $grey;
   padding: 50px 0 70px;
   &__card {
@@ -22,7 +21,7 @@
     }
   }
   &__header, &__footer {
-    background: $test;
+    background: $card-grey;
     padding: 20px;
     h3 {
       margin: 0;
@@ -46,7 +45,7 @@
   }
   &__excerpt {
     margin-bottom: 20px;
-    padding: 0 25px;
+    padding: 0 50px;
     text-align: center;
     @media (max-width: 767px) {
       padding: 0;

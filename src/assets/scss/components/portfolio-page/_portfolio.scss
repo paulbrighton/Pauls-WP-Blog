@@ -1,5 +1,5 @@
 .c-portfolio {
-  background: $dark-blue-portfolio-d;
+  background: $dark-blue;
   padding: 50px 0 30px;
   &__header {
     margin-bottom: 60px;
@@ -13,7 +13,7 @@
   }
 
   &__card {
-    background: $test;
+    background: $card-grey;
     color: $grey;
     border: 1px solid lighten($dark-grey, 5%);
     border-radius: 5px;
@@ -39,7 +39,7 @@
       }
     }
     &-text {
-      padding: 1.25rem 15px 35px 15px;
+      padding: 1.875rem 15px 35px 15px;
       display: flex;
       flex-direction: column;
       flex: 1 1 auto;

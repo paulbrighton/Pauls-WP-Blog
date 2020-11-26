@@ -72,3 +72,13 @@ $fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
 .grecaptcha-badge {
   opacity: 0;
 }
+
+.enlighter-default:hover .enlighter-toolbar {
+    display: none !important;
+}
+
+.p-recaptcha__text {
+  a:hover {
+    color: $grey;
+  }
+}

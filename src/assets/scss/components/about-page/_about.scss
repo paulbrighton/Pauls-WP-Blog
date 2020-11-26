@@ -1,11 +1,14 @@
 .c-about {
   &__container {
-    background: $dark-blue-portfolio-d;
-    background: linear-gradient(90deg, rgba(21,23,39,1) 50%, rgba(9,9,121,1) 50%, rgba(255,255,255,1) 50%);
+    background: $dark-blue;
+    background: linear-gradient(90deg, $dark-blue 50%, rgba(255,255,255,1) 50%);
   }
 
   &__section {
     margin-bottom: 50px;
+    a:hover {
+      color: $grey;
+    }
     h2 {
       margin-top: 25px;
     }
@@ -28,7 +31,7 @@
     }
   }
   &--left {
-    background: $dark-blue-portfolio-d;
+    background: $dark-blue;
     position: relative;
     @include font-body;
     color: #a7a9be;
@@ -60,7 +63,7 @@
     }
     &:before {
       left: -999em;
-      background: $dark-blue-portfolio-d;
+      background: $dark-blue;
       content: '';
       display: block;
       position: absolute;

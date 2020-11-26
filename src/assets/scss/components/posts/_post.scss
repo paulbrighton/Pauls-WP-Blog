@@ -96,7 +96,10 @@
     color: $grey;
   }
   &__meta {
-    color: $grey;
+    color: $black;
+    span {
+      color: $brand;
+    }
   }
   &__title {
     font-weight: 600;
@@ -132,7 +135,7 @@
 .wp-block-image {
   padding: 0;
   margin: 0;
-  padding: 1.25rem 0;
+  // padding: 1.25rem 0;
 
   img {
     width: 100%;
@@ -204,4 +207,8 @@ section .related .products {
     background-color: #282a36;
     padding: 15px !important;
     border-radius: 5px;
+}
+
+.c-post-custom__img {
+  margin: 40px 0 20px;
 }
