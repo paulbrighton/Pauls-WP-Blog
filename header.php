@@ -12,9 +12,9 @@
   <header>
     <div class="c-header">
       <?php if (wp_is_mobile()) : ?>
-        <div style="background: url('<?php the_field('home_hero_mobile', 40); ?>') center center; background-size: cover; background-repeat: no-repeat;" class="c-hero">
+        <div style="background: #15171c url('<?php the_field('home_hero_mobile', 40); ?>') center center; background-size: cover; background-repeat: no-repeat;" class="c-hero">
         <?php else : ?>
-          <div style="background: url('<?php the_field('home_hero', 40); ?>') center center; background-size: cover; background-repeat: no-repeat;" class="c-hero">
+          <div style="background: #15171c url('<?php the_field('home_hero', 40); ?>') center center; background-size: cover; background-repeat: no-repeat;" class="c-hero">
           <?php endif; ?>
           <div class="c-header__overlay">
             <div class="o-row c-header__info">

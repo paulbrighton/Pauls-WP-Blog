@@ -578,7 +578,7 @@ msgid "Not found in Trash"
 msgstr ""
 
 #: template-parts/post/content-none.php:5
-msgid "Whoops, something went wrong. Why not try searching for some interesting content."
+msgid "Whoops, something went wrong."
 msgstr ""
 
 #. translators: , is used between categories
