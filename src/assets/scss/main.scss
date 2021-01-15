@@ -82,3 +82,8 @@ $fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
     color: $grey;
   }
 }
+
+.portfolio-link:hover {
+  color: $brand-lighter;
+  text-decoration: underline;
+}

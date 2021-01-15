@@ -1,4 +1,4 @@
-# Copyright (C) 2020 pauls-blog
+# Copyright (C) 2021 pauls-blog
 # This file is distributed under the same license as the pauls-blog package.
 msgid ""
 msgstr ""
